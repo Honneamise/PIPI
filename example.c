@@ -2,6 +2,7 @@
 #include "stdio.h"
 
 //json
+#define JSON
 #include "JSON/json.h"
 
 //main

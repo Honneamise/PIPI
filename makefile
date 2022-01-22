@@ -8,10 +8,10 @@ clean:
 	rm -f *.bin
 
 test:
-	$(CC) $(CFLAGS) test.c JSON/*.c $(LDFLAGS) -o $@.bin
+	$(CC) $(CFLAGS) test.c $(LDFLAGS) -o $@.bin
 
 example:
-	$(CC) $(CFLAGS) example.c JSON/*.c $(LDFLAGS) -o $@.bin
+	$(CC) $(CFLAGS) example.c $(LDFLAGS) -o $@.bin
 
 debug: clean test
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s ./test.bin

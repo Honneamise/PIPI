@@ -4,6 +4,7 @@
 #include "string.h"
 
 //json
+#define JSON
 #include "JSON/json.h"
 
 //main
